@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "parcel":"parcel watch index.js"
+    "parcel": "parcel build index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "postal": "^2.0.5"
+    "antd": "^3.20.0",
+    "core-decorators": "^0.20.0",
+    "postal": "^2.0.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -20,6 +24,7 @@
     "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
     "parcel-bundler": "^1.12.3"
   }
 }
