@@ -8,12 +8,24 @@ for(let item of zionConf){
             recursive:true
         }
         watch(item.path,options,(event,filename)=>{
-            console.log(filename)
             callfile.exec(item.command,function (err, stdout, stderr) {
-                console.log(err)
+                if(err){
+                    console.log('\x1B[31m',"error:" + err)
+                }
                 console.log(stdout)
                 console.log(stderr)
             })
         })
     }
-}
+};
+(function init(){
+    for(let item of zionConf){
+        callfile.exec(item.command,function (err, stdout, stderr) {
+            if(err){
+                console.log('\x1B[31m',"error:" + err)
+            }
+            console.log(stdout)
+            console.log(stderr)
+        })
+    }
+})()

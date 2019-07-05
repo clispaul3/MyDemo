@@ -1,5 +1,6 @@
 const path = require('path')
 const externals = require('./externals')
+const plugins = require('./plugins')
 module.exports = {
     mode:"development",
     entry:path.resolve(__dirname,'../dist/main.js'),
@@ -15,5 +16,6 @@ module.exports = {
             }
         ]
     },
-    externals
+    externals,
+    plugins
 }

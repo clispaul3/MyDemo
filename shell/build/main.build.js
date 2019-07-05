@@ -86,49 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./dist/component/Button.js":
-/*!**********************************!*\
-  !*** ./dist/component/Button.js ***!
-  \**********************************/
-/*! exports provided: Button */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Button\", function() { return Button; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Button(props) {\n  function handle() {\n    console.log(props.content);\n  }\n\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n    onClick: handle\n  }, \"\\u6309\\u94AE\");\n}\n\n//# sourceURL=webpack:///./dist/component/Button.js?");
-
-/***/ }),
-
 /***/ "./dist/main.js":
 /*!**********************!*\
   !*** ./dist/main.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ \"react-dom\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _component_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component/Button */ \"./dist/component/Button.js\");\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_0___default.a.render(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_component_Button__WEBPACK_IMPORTED_MODULE_2__[\"Button\"], {\n  content: \"btn\"\n}), document.getElementById('app'));\n\n//# sourceURL=webpack:///./dist/main.js?");
-
-/***/ }),
-
-/***/ "react":
-/*!****************************************!*\
-  !*** external "window.__LIB['React']" ***!
-  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = window.__LIB['React'];\n\n//# sourceURL=webpack:///external_%22window.__LIB%5B'React'%5D%22?");
-
-/***/ }),
-
-/***/ "react-dom":
-/*!*******************************************!*\
-  !*** external "window.__LIB['ReactDOM']" ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = window.__LIB['ReactDOM'];\n\n//# sourceURL=webpack:///external_%22window.__LIB%5B'ReactDOM'%5D%22?");
+eval("// import { Button } from './component/Button'\nvar _Antd = Antd,\n    Button = _Antd.Button;\nReactDOM.render(React.createElement(Button, {\n  type: \"primary\",\n  ghost: true\n}, \"\\u6309\\u94AE111222\"), document.getElementById('app'));\n\n//# sourceURL=webpack:///./dist/main.js?");
 
 /***/ })
 

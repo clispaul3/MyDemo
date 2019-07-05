@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>home</h1>
+    <button >async</button>
+</body>
+</html>
+<script>
+    function asyncScript(){
+        const script = document.createElement('script')
+        script.src = '../page/async.js'
+        script.async = false
+        document.getElementsByTagName('head')[0].appendChild(script)
+        document.addEventListener("DOMNodeInserted",function(e){
+            console.log(e)
+        })
+    }
+</script>

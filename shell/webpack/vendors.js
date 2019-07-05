@@ -9,6 +9,9 @@ const vendors = [
     },{
         name:'$',
         path:'jquery'
+    },{
+        name:'Antd',
+        path:'antd'
     }
 ]
 module.exports = vendors

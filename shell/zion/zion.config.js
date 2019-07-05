@@ -2,14 +2,14 @@ module.exports = [
     {
         path:"src",
         filter:/\.scss$/,
-        command:"node-sass src -o dist"
+        command:"npm run sass"
     },{
         path:"src",
         filter:/\.(js|jsx)$/,
-        command:"babel src --out-dir dist"
+        command:"npm run babel"
     },{
         path:"dist",
         fileter:/\.js$/,
-        command:"webpack"
+        command:"npm run build"
     }
 ]

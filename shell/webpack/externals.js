@@ -3,7 +3,7 @@ const externals = (function(vendors){
     let obj = {}
     vendors.forEach(vendor=>{
         obj = Object.assign(obj,{
-            [vendor.path]:"window.__LIB['"+vendor.name+"']"
+            [vendor.path]:"window.['"+vendor.name+"']"
         })
     })
     return obj
